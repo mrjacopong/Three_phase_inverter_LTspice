@@ -11,7 +11,9 @@ omega = f*pi*2;
 Z = Vph*Mmax/(Irms*sqrt(2));
 phi = acos(cosphi);
 omegaL = Z*sin(phi);
+Pout = 3*(Vph*Mmax/sqrt(2))*Irms*cosphi;
 
 % Output:
 R = Z*cosphi
 L = omegaL/omega
+Idc = Pout/(Vph*2)
